@@ -1,0 +1,38 @@
+/* Styles for the About / home page profile and description */
+
+.profile {
+  /* Ensure profile block doesn't overflow when image resized */
+  max-width: 320px;
+}
+
+.profile img {
+  /* Scale image to 80% of its default container size */
+  width: 80% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile .more-info {
+  /* hide the caption/extra info under the profile image */
+  display: none !important;
+}
+
+.post-header {
+  /* Make header and description more prominent */
+}
+
+.post-header .desc {
+  font-size: 1.15rem; /* larger description text */
+  line-height: 1.8; /* increased line-height for readability */
+  max-width: 65%;
+  /* Add some spacing to visually align with the (taller) profile image */
+  margin-top: 0.6rem;
+}
+
+@media (min-width: 992px) {
+  .post-header .desc {
+    font-size: 1.25rem;
+    line-height: 1.9;
+  }
+}
